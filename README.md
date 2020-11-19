@@ -1,4 +1,4 @@
-`scripts/` includes all of the scripts for processing the mass spectrometry data. It requires a few installations before using (OpenMS is the biggest thing to install), but there are a few others. Here I detail how to run all the scripts.
+`scripts/` includes all of the scripts for processing the mass spectrometry data. It requires a few installations before using (OpenMS is the biggest thing to install), but there are a few others. Here I detail how to run all the scripts. **Note that these data and the output for this pipeline are being used to write another paper simultaneously, so there are some components that would need to be tweaked to run this without error. But for the mn-fe-allocation (see other Bertrand Lab github repo with this name) data production, the pipeline will still work.
 
 These scripts assume the following file structure:
 
@@ -29,4 +29,5 @@ These scripts assume the following file structure:
 First we map peptides that are unique to a given taxa using `peptide-assignment-tfg.sh`, which calls on an R script `peptide-assignment-post-mcl.R`. This R script uses functions written in `post_processing_functions.R`.
 
 After peptides are mapped to diatoms, we then need to get the coarse-grained diatom proteome, which can be done using `mapping_diatom_coarse_grains.sh` which calls `mapping_diatom_coarse_grains.R`, which also uses functions from `post_processing_functions.R`.
+
 
