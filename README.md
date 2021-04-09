@@ -68,7 +68,7 @@ Calculating the total ion current using the python script 'calc_tic.py'.
 
 First we map peptides that are unique to a given taxa using `peptide-assignment-tfg.sh`, which calls on an R script `peptide-assignment-post-mcl.R`. This R script uses functions written in `post_processing_functions.R`.
 
-After peptides are mapped to diatoms, we then need to get the coarse-grained diatom proteome, which can be done using 'mapping_diatom_coarse_grains.sh' which calls 'mapping_diatom_coarse_grains.R', which also uses functions from 'post_processing_functions.R'.
+After peptides are mapped to diatoms, we then need to get the coarse-grained diatom proteome, which can be done using 'mapping_diatom_coarse_grains.sh' which calls `mapping_diatom_coarse_grains.R`, which also uses functions from 'post_processing_functions.R'.
 
 To map coarse grains to all taxa, we run 'mapping_meta_coarse_grains.sh' which calls on 'mapping_meta_coarse_grains.sh', which also uses functions from 'post_processing_functions.R'.
 
