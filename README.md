@@ -1,15 +1,51 @@
-`scripts/` includes all of the scripts for processing the mass spectrometry data. It requires a few installations before using (OpenMS is the biggest thing to install), but there are a few others. Here I detail how to run all the scripts. **Note that these data and the output for this pipeline are being used to write another paper simultaneously, so there are some components that would need to be tweaked to run this without error. But for the mn-fe-allocation (see other Bertrand Lab github repo with this name) data production, the pipeline will still work.
+`scripts/` includes all of the scripts for processing the mass spectrometry data. It requires a few installations before using (OpenMS is the biggest thing to install), but there are a few others. Here I detail how to run all the scripts. 
+
+**Note that these data and the output for this pipeline produce results for two distinct papers. One paper uses the metaproteomic data to connect with the proteomic allocation model described in mn-fe-allocation (other github repo). I have indicated where certain scripts are necessary for that repo below.
 
 These scripts assume the following file structure:
 
 ```
-/scripts
-/data
+/scripts/
+/data/
     /mzML-converted/
     /tfg-all-database/
     /mcmurdo-metatrans/Bertrand_McCrow_TFG/
         /summaries_combined/
     /new_annotation/
+    /metaGT/
+        /AAHZ_L6_ANT_pool2_MetaT
+        /AAHZ_L5_ANT_pool1_MetaG
+    /GOS_927_0_1
+    /GOS_927_0_8
+    /GOS_927_3_0
+    /GOS_930_0_1
+    /GOS_930_0_8
+    /GOS_930_3_0
+    /GOS_933_0_1
+    /GOS_933_0_8
+    /GOS_933_3_0
+    /GOS_935_0_1
+    /GOS_935_0_8
+    /GOS_935_3_0
+    /GOS_0_1
+    /GOS_0_8
+    /GOS_3_0
+    /pooled-database
+    /specific-database
+    /one-sample
+    /tfg-t0-database
+    /tfg-all-database
+    /formatted-databases
+    /go-slim-analysis
+    /normalization-data
+    /correction-factor-output
+    /digested-databases
+    /targeted-proteomics-data
+    /cobia-analysis
+    /pep-sample-sim
+    /go-tax-pipeline-output
+    /culture-proteomics-data
+/figures/
 ```
 
 ### Database Searching and Peptide Quantification
