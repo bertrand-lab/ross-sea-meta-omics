@@ -62,7 +62,7 @@ These scripts assume the following file structure:
 
 ### Calculating Total Ion Current
 
-Calculating the total ion current using the python script 'calc_tic.py'.
+Calculating the total ion current using the python script `calc_tic.py`.
 
 ### Assigning Peptides to Taxa
 
@@ -78,31 +78,31 @@ THe main script here is 'metaproteomic_bias_same_pool.py', which runs the genera
 
 ### Cobia analysis
 
-'digest_databases.sh'
+`digest_databases.sh`
 
     - digested databases for inputs to cobia
 
-'cobia_on_samples.sh'
+`cobia_on_samples.sh`
 
     - subsampling the observed peptides for then running the RT model
 
-'cobia_rt_model.sh'
+`cobia_rt_model.sh`
 
     - Training the RT model
 
-'cobia_rt_predict.sh'
+`cobia_rt_predict.sh`
 
     - Using the RT model to predict RT times
 
-'cobia_cofrag_prediction.sh'
+`cobia_cofrag_prediction.sh`
 
     - Digesting database and assigning RT times etc.
 
-'cobia_cofrag_prediction_targeted.sh'
+`cobia_cofrag_prediction_targeted.sh`
 
     - Cofragmentation risk score prediction with a list of peptides
 
-'cobia_cofrag_prediction_targeted_discovery.sh'
+`cobia_cofrag_prediction_targeted_discovery.sh`
 
     -  Cofragmentation risk score prediction with a another list of peptides
 
@@ -110,42 +110,42 @@ THe main script here is 'metaproteomic_bias_same_pool.py', which runs the genera
 
 As mentioned above, the data from this repo are used to make inferences on the parameters in the model discussed in the repo mn-fe-allocation. However, for the paper where these data alone are discussed, the analyses and figures are done with the following:
 
-'MCL-cluster-normalization.R'
+`MCL-cluster-normalization.R`
 
     - Script required for summarizing the normalization factors
 
-'normalization-comparison.R'
+`normalization-comparison.R`
 
     - Compares normalization factors and makes supp figures
 
-'plotting_metapep_sim.R'
+`plotting_metapep_sim.R`
 
     - Plots the metaproteomic simulation results
 
-'discoverability_analysis_ribo_photo.R'
+`discoverability_analysis_ribo_photo.R`
 
     - Plots the number of peptides for each coarse grained protein group and the simulation results. This requires the previous script to run.
 
-'cobia_analysis_summarizing.R' 
+`cobia_analysis_summarizing.R` 
 
     - Summarizing the cobia analysis
 
-'formatting_nunn_proteomic_data.R'
+`formatting_nunn_proteomic_data.R`
 
     - Formatting the Nunn et al 2013 proteomic data for the Figure 2 comparison
 
-'schmidt_cv_dist.R'
+`schmidt_cv_dist.R`
 
     - Getting the coefficient of variation distribution from Schmidt et al 2016
 
-'getting_coarse_grained_all_taxa_mcl.R'
+`getting_coarse_grained_all_taxa_mcl.R`
 
     - This is the main script for the figures in the manuscript. It has all main figures, and most of the supplementary figures as well, and a lot of the data munging.
 
-'getting_database_characteristics.sh'
+`getting_database_characteristics.sh`
 
     - This is for making Table 1 in the manuscript.
 
-'database-construction-notebook.ipynb'
+`database-construction-notebook.ipynb`
 
     - To make the different database configurations this jupyter notebook was used. Specifically it subsets sequences from assemblies (as reported in the methods).
